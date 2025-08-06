@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML5 Enhancement & Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+    }
+    header, footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #eee;
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    fieldset {
+      margin-top: 1rem;
+      padding: 1rem;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      padding: 0.5rem;
+    }
+    table {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My HTML5 Showcase</h1>
+    <p>Exploring lists, tables, media, and advanced forms</p>
+  </header>
+
+  <main>
+    <!-- Section 1: Lists -->
+    <section>
+      <h2>My Top 3 Goals</h2>
+      <ol>
+        <li>Learn advanced HTML5 techniques</li>
+        <li>Master responsive web design</li>
+        <li>Build interactive user-friendly websites</li>
+      </ol>
+
+      <h3>Things I Love</h3>
+      <ul>
+        <li>Coding</li>
+        <li>Music</li>
+        <li>Reading Tech Blogs</li>
+      </ul>
+    </section>
+
+    <!-- Section 2: Table -->
+    <section>
+      <h2>Weekly Study Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Web Development</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Python</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Entrepreneurship</td>
+            <td>2.5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section>
+      <h2>Media Showcase</h2>
+    <img src="https://www.freepik.com/free-photo/fun-party-with-dj_113177336.htm#fromView=serie&page=1&position=0&from_element=series_block" alt="DJ performing at a lively party with people dancing under colorful lights in a festive indoor setting, energetic and joyful atmosphere" width="400" />
+      <p>Listen to this relaxing background music:</p>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <p>Watch this inspiring video:</p>
+      <video width="400" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Section 4: HTML5 Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fname">First Name:</label><br>
+          <input type="text" id="fname" name="fname" placeholder="Zakayo" required minlength="2"><br><br>
+
+          <label for="lname">Last Name:</label><br>
+          <input type="text" id="lname" name="lname" placeholder="Ashuke" required minlength="2"><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="zshuka@kenya.com" required><br><br>
+
+          <label for="phone">Phone:</label><br>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0712345678" required><br><br>
+
+          <label for="dob">Date of Birth:</label><br>
+          <input type="date" id="dob" name="dob" required><br><br>
+
+          <label for="gender">Gender:</label><br>
+          <select id="gender" name="gender" required>
+            <option value="">--Select--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+
+          <label for="username">Username:</label><br>
+          <input type="text" id="username" name="username" required pattern="^[a-zA-Z0-9_]{5,}$" placeholder="At least 5 characters"><br><br>
+
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password" required minlength="6" placeholder="Minimum 6 characters"><br><br>
+
+          <label for="confirm">Confirm Password:</label><br>
+          <input type="password" id="confirm" name="confirm" required minlength="6"><br><br>
+
+          <label>
+            <input type="checkbox" name="terms" required> I agree to the terms and conditions
+          </label>
+        </fieldset>
+
+        <br>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Assignment by Vincent Tochi</p>
+  </footer>
+</body>
+</html>
